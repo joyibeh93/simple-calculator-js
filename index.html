@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Javascript</title>
+</head>
+
+<body>
+    <h1>Javascript assignment</h1>
+    <script>
+        // document.write('My name is Ibeh Joy Chinwendu');
+        // document.write(' I am 1.51ft tall');
+        // document.write('I am from Nigeria');
+
+        //A simple Calculator
+        const firstNumber = parseFloat(prompt('Enter the first number'));
+        const secondNumber = parseFloat(prompt('Enter the second number'));
+        const operator = prompt('Enter an operator either(+,-,*,/): ');
+
+        let total;
+        if (operator == '+') {
+            total = firstNumber + secondNumber;
+        } else if (operator == '-') {
+            total = firstNumber - secondNumber;
+        } else if (operator == '*') {
+            total = firstNumber * secondNumber;
+        } else {
+            total = firstNumber / secondNumber;
+        }
+
+        document.write(
+            `${firstNumber}${operator} ${secondNumber} = ${total}`
+        );
+    </script>
+</body>
+
+</html>
